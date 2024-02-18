@@ -1,5 +1,4 @@
 # shubhangi-tech-portfolio
-# shubhangi-tech-portfolio
 🌟 Shubhangi's Tech Portfolio 🌟
 Welcome to my tech portfolio repository! Here, you'll find all the details about my skills, projects, achievements, and contact information.
 
