@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PERSONAL PORTFOLIO</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/05c2276a47.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href='#header'>Home</a></li>
+                    <li><a href='#about'>About</a></li>
+                    <li><a href='#services'>Services</a></li>
+                    <li><a href='#portfolio'>Portfolio</a></li>
+                    <li><a href='#contact'>Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Web/Machine Learning Developer</p>
+                <h1> Hi, I am <span>Shubhangi</span><br>Vajpai From India</h1>
+            </div>
+        </div>
+    </div>
+    <!-- ----------about--------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.jpg" alt="User Image">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title"> About Me</h1>
+                    <p>Passionate final-year B.Tech Computer Science student at PSIT College of Engineering, Kanpur, proudly hailing from this vibrant city. I'm on a journey to craft seamless user experiences through the art of front-end development and the science of machine learning.<br>
+                        Beyond the code, I'm a dynamic communicator, exploring the world of public speaking to effectively share ideas and insights. With a zest for innovation and a knack for problem-solving, I'm all about turning challenges into stepping stones. Ready to dive into new horizons, I bring a unique blend of tech prowess and a commitment to excellence, excited to make a mark in the ever-evolving tech landscape.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')" >Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Technical Skills</span><br>Machine Learning, Data Science , Problem Solving , Data Structures</li>
+                            <li><span>Programming Language</span><br>Python, C, C++</li>
+                            <li><span>Web Development</span><br>Frontend Development, HTML, CSS, JavaScript (ES6),React</li>
+                            <li><span>Backend Development</span><br>Python Framework,Flask, Django</li>
+                            <li><span>Database</span><br>SQL, MySQL</li>
+                            <li><span>Version Control</span><br>Git, GitHub</li>
+                            <li><span>Tools</span><br>VS Code, Jupyter Notebook</li>
+                            <li><span>Soft Skills</span><br>Communication, Collaboration</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>06/2022-07/2022</span><br>Machine Learning Developer Intern at Technocolabs Softwares</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2020-2024 - 8.39 cgpa</span><br>B.Tech in Computer Science and Engineering from Psit College of Engineering</li>
+                            <li><span>2019 - 86.8%</span><br>Higher Secondary School(CBSE) from MARIAMPUR SR. SEC. SCHOOL</li>
+                            <li><span>2017 - 10 cgpa</span><br>Secondary School(CBSE) from MARIAMPUR SR. SEC. SCHOOL</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- --------------------services------------------------------- -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title"> My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-regular fa-file-code"></i>
+                  <h2>Machine Learning Solutions</h2>
+                  <p>I offer machine learning solutions tailored to diverse industries including agriculture, healthcare, and finance. With projects like "GREEN VISION" and "Pre_Free," I demonstrate proficiency in developing predictive models for disease classification in agriculture and health risk assessment for pregnant patients. These solutions leverage advanced techniques in machine learning, such as deep learning and data augmentation, 
+                to provide accurate insights and enable proactive interventions, thereby contributing to improved outcomes in respective domains.</p>
+                <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Development</h2>
+
+                    <p>I specialize in web development services aimed at crafting user-friendly and visually appealing online experiences. Leveraging my expertise in HTML, CSS, JavaScript, and API integration, I create custom websites and web applications tailored to meet the unique needs of businesses and individuals. From dynamic data visualization to seamless user interfaces, my work reflects a commitment to delivering high-quality, 
+                       responsive web solutions that enhance engagement and drive results.</p>
+                  <a href="#">Learn more</a>
+                  </div>
+                  <div>
+                    <i class="fa-solid fa-database"></i>
+                    <h2>Data Analysis and Database Management Solutions</h2>
+                    <p> I meticulously examine datasets using tools like Pandas, SQL, and advanced statistical techniques to uncover meaningful patterns, trends, and correlations. I transform complex data into clear, actionable insights through visually compelling dashboards, reports, and interactive visualizations,
+                        empowering clients to make informed decisions that drive business success. Additionally, I excel in database management, where I design, implement, and maintain robust database systems tailored to the specific needs of clients. </p>
+                  <a href="#">Learn more</a>
+                  </div>
+
+            </div>
+
+        </div>
+    </div>
+    <!-- --------------------------------Portfolio------------------------------------------------------------ -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title"> My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work1.png">
+                    <div class="layer">
+                        <h3>Pre_Free Web App</h3>
+                        <p>Pre_Free is a predictive web application designed to assess health risks for pregnant patients.It offers early detection and intervention for potential complications during pregnancy.</p>
+                        <a href='#'><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work2.png">
+                    <div class="layer">
+                        <h3>Green Vision Web App</h3>
+                        <p>GREEN VISION is a machine learning project focused on agricultural applications, specifically targeting disease classification in potato crops.</p>
+                        <a href='#'><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work3.png">
+                    <div class="layer">
+                        <h3>WeatherSnap</h3>
+                        <p>WeatherSnap is a user-friendly weather application developed to deliver rapid and precise updates on global weather conditions.Users can check real-time information on temperature, humidity, and wind speed</p>
+                        <a href='#'><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+
+        </div>
+    </div>
+    <div class="container">
+        <h1 class="sub-title"> Certifications</h1>
+        <div class="certification-list">
+            <div class="certification">
+                <img src="images/Python_basic.png">
+                <div class="certification-details">
+                    <h3>Python (Basics)</h3>
+                    <p>Issued: 05/2022</p>
+                    <p>Issued by: Coursera</p>
+                </div>
+            </div>
+            <div class="certification">
+                <img src="images/linear_regression.png">
+                <div class="certification-details">
+                    <h3>Linear Regression with NumPy and Python (Guided Project)</h3>
+                    <p>Issued: 10/2022</p>
+                    <p>Issued by: Coursera</p>
+                </div>
+            </div>
+            <div class="certification">
+                <img src="images/c++.png">
+                <div class="certification-details">
+                    <h3>Complete Introduction to C++</h3>
+                    <p>Issued: 06/2021</p>
+                    <p>Issued by: Udemy</p>
+                </div>
+            </div>
+            <div class="certification">
+                <img src="images/Data_Science.png">
+                <div class="certification-details">
+                    <h3>Data Science Course</h3>
+                    <p>Issued: 04/2023</p>
+                    <p>Issued by: Coursera</p>
+                </div>
+            </div>
+            <div class="certification">
+                <img src="images/Data_analysis.png">
+                <div class="certification-details">
+                    <h3>Getting Started with Data Analytics on AWS</h3>
+                    <p>Issued: 04/2023</p>
+                    <p>Issued by: Coursera</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <h1 class="sub-title"> Achievements</h1>
+        <div class="achievement-list">
+            <div class="achievement">
+                <img src="images/LeetCode.png">
+                <div class="achievement-details">
+                    <h3>Completed over 395 programming challenges on LeetCode</h3>
+                    <a href="https://leetcode.com/Shubhangi_Vajpai/">Visit Profile</a>
+                </div>
+            </div>
+            <div class="achievement">
+                <img src="images/hackerrank.png">
+                <div class="achievement-details">
+                    <h3>5-star rating in Python and Problem Solving on HackerRank</h3>
+                    <a href="https://www.hackerrank.com/profile/2003480100080_A">Visit Profile</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ------------------------------Contact----------------------------------------------------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-regular fa-envelope"></i> shubhangivajapi939@gmal.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i> 6393589539</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/shubhangi-vajpai-0b05401a5/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/shubhangivajpai"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.instagram.com/_shubhangi_vajpai_/?hl=en"><i class="fa-brands fa-instagram"></i></a>
+
+                    </div>
+                    <a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>
+
+
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+
+                    </form>
+                    <span id="msg"></span> 
+
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p> Copyright @ Shubhangi. Made with <i class="fa-solid fa-heart"></i> by Shubhangi Vajpai</p>
+        </div>
+    </div>
+    <script>
+        var tablinks= document.getElementsByClassName("tab-links");
+        var tabcontents= document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+
+        
+    }
+    event.currentTarget.classList.add("active-link");
+    document.getElementById(tabname).classList.add("active-tab");
+    }
+    </script>
+    <script>
+        var sidemeu= document.getElementById("sidemenu");
+        function openmenu(){
+            sidemeu.style.right="0";
+
+        }
+        function closemenu(){
+            sidemeu.style.right="-200px";
+
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxnU-MTVMCQ6hFtqdad1SxSRV1EadyS4TCWZ4do4elQC2ChGFtjJ7-RPkkud0KnuLA/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+
+    form.addEventListener('submit', e => {
+  e.preventDefault()
+  fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+    .then(response => {
+        msg.innerHTML = "Message sent successfully"; // Corrected typo here
+        setTimeout(function(){
+            msg.innerHTML = "";
+        }, 5000);
+        form.reset();
+    })
+    .catch(error => console.error('Error!', error.message))
+})
+      </script>
+</body>
+
+</html>
+       
